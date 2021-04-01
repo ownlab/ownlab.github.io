@@ -69,8 +69,8 @@ const nextConfiguration = {
         new SentryWebpackPlugin({
           include: '.next',
           ignore: ['node_modules'],
-          //stripPrefix: ['webpack://_N_E/'],
-          urlPrefix: `~/_next`,
+          stripPrefix: ['webpack://_N_E/'],
+          urlPrefix: `~${basePath}/_next`,
           release: VERCEL_GIT_COMMIT_SHA,
         })
       )
