@@ -1,4 +1,6 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
 Host: https://ownlab.vercel.app
-Sitemap: https://ownlab.vercel.app/sitemap.xml

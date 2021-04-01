@@ -1,6 +1,4 @@
 import React from 'react';
-import { ThemeProvider } from 'theme-ui';
-import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
@@ -13,7 +11,6 @@ import Support from 'sections/support';
 
 export default function IndexPage() {
   return (
-    <ThemeProvider theme={theme}>
       <Layout>
         <SEO
           description="ownLab Landing Page deployed on Vercel!"
@@ -27,6 +24,5 @@ export default function IndexPage() {
         <WorkFlow />
         <Support />
       </Layout>
-    </ThemeProvider>
   );
 }
